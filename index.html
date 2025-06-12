@@ -10,7 +10,6 @@
   <link href="https://api.fontshare.com/v2/css?  f[]=gambetta@400&display=swap" rel="stylesheet">
 
   <!--Scripts-->
-  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
     <title>Christopher Novo Page</title>
@@ -22,10 +21,10 @@
 <body>
     <div id="nav-bar">
         <div id="nav-items">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home-page">Home</a>
+            <a href="#aboutme-page">About</a>
+            <a href="#projects-page">Projects</a>
+            <a href="#contact-page">Contact</a>
         </div>
         <!-- Hamburger Button -->
         <button class="hamburger hamburger--collapse" type="button" onclick="toggleMenu()">
@@ -39,9 +38,9 @@
     <span class="display-name"></span>
     <span class="display-bio">A creative artist crafting visually compelling designs that<br> balance aesthetics, clarity, and purpose across diverse media.</span>
     <div class="buttons">
-        <button class="btn" id="about">About</button>
-        <button class="btn" id="projects">Projects</button>
-        <button class="btn" id="contact">Contact</button>
+        <button class="btn" id="about" onclick="location.href='#aboutme-page'">About</button>
+        <button class="btn" id="projects" onclick="location.href='#projects-page'">Projects</button>
+        <button class="btn" id="contact" onclick="location.href='#contact-page'">Contact</button>
     </div>
   </div>
   
@@ -74,5 +73,49 @@
 </div>
   </div>
   
+  <section id="projects-page">
+  <h2>Recent Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Women Helping Women Poster</h3>
+      <p>A bold typographic poster created for a nonprofit fundraiser, emphasizing empowerment and modern visual appeal.</p>
+      <a href="link-to-your-project1" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Kalispel Fish Education</h3>
+      <p>Educational materials designed for the Kalispel Tribe to raise awareness about local fish species and conservation efforts.</p>
+      <a href="link-to-your-project2" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Peek-a-Boo Animal Book (Figma)</h3>
+      <p>Interactive children’s UI/UX project designed in Figma, featuring animated animal reveals and sound design.</p>
+      <a href="link-to-your-project3" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+  
+  <section id="contact-page">
+  <h2>Contact Me</h2>
+  <div class="contact-info">
+    <p><strong>Name:</strong> Christopher Novo</p>
+    <p><strong>Email:</strong> <a href="mailto:christophernovo@gmail.com">christophernovo@gmail.com</a></p>
+    <p><strong>Phone:</strong> (509) 701-8881</p>
+
+    <div class="social-links">
+      <a href="https://discordapp.com/users/1342560953186783334" target="_blank" aria-label="Discord">
+        <img src="https://simpleicons.org/icons/discord.svg" alt="Discord">
+      </a>
+      <a href="https://github.com/cnovo184" target="_blank" aria-label="GitHub">
+        <img src="https://simpleicons.org/icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://codepen.io/Christopher-Novo" target="_blank" aria-label="CodePen">
+        <img src="https://simpleicons.org/icons/codepen.svg" alt="CodePen">
+      </a>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
