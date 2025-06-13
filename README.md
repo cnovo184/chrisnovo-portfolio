@@ -1,2 +1,2 @@
 # chrisnovo-portfolio
-My personal portfolio page
+My personal page created using HTML, CSS and JS code.
